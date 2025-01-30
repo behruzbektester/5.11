@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__left">
+                <h1>Where in the world?</h1>
+            </div>
+            <div class="header__right">
+                <button class="mode-btn">
+            <img class="light-btn" src="./images/light.svg" alt="light mode" />
+            <img
+              class="dark-btn hidden"
+              src="./images/dark.svg"
+              alt="dark mode"
+            />
+          </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="filter-section container">
+        <div class="input-container">
+            <form>
+                <img src="./images/search.svg" alt="" />
+                <input type="text" placeholder="Search for a country..." />
+            </form>
+        </div>
+    </section>
+
+    <section class="countries-section container">
+        <div class="list-container">
+            <ol class="list" id="list"></ol>
+        </div>
+    </section>
+    <div class="loader-container hidden">
+        <span class="loader"></span>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
