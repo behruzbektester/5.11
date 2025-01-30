@@ -6,7 +6,7 @@ const body = document.querySelector("body");
 
 async function getData() {
     loaderContainer.classList.remove("hidden");
-    await new Promise((r) => setTimeout(r, 2000));
+    await new Promise((r) => setTimeout(r, 1000));
     const req = await fetch("https://restcountries.com/v3.1/all");
     const data = await req.json();
     loaderContainer.classList.add("hidden");
