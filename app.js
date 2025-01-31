@@ -6,7 +6,7 @@ const body = document.querySelector("body");
 
 async function getData() {
     loaderContainer.classList.remove("hidden");
-    await new Promise((r) => setTimeout(r, 1000));
+    // await new Promise((r) => setTimeout(r, 1000));
     const req = await fetch("https://restcountries.com/v3.1/all");
     const data = await req.json();
     loaderContainer.classList.add("hidden");
@@ -49,7 +49,7 @@ function generateCountries(countries) {
         li.classList.add("list-item");
         img.width = 264;
         img.height = 160;
-        img.src = c.flags.svg;
+        img.src = c.flags.png;
         img.alt = c.flags.alt;
         p.innerHTML = `<span class="name">${c.name.common}</span>`;
         p.style.paddingBottom = "16px";
