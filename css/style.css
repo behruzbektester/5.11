@@ -1,226 +1,233 @@
 /* nunito-sans-300 - latin */
 
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Nunito Sans";
-    font-style: normal;
-    font-weight: 300;
-    src: url("../fonts/nunito-sans-v15-latin-300.woff2") format("woff2");
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/nunito-sans-v15-latin-300.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 
 /* nunito-sans-regular - latin */
 
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Nunito Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/nunito-sans-v15-latin-regular.woff2") format("woff2");
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-sans-v15-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 
 /* nunito-sans-600 - latin */
 
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Nunito Sans";
-    font-style: normal;
-    font-weight: 600;
-    src: url("../fonts/nunito-sans-v15-latin-600.woff2") format("woff2");
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/nunito-sans-v15-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 
 /* nunito-sans-800 - latin */
 
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Nunito Sans";
-    font-style: normal;
-    font-weight: 800;
-    src: url("../fonts/nunito-sans-v15-latin-800.woff2") format("woff2");
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/nunito-sans-v15-latin-800.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #111517;
-    font-family: "Nunito Sans";
-    font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #111517;
+  font-family: "Nunito Sans";
+  font-weight: 300;
 }
 
 body {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .loader {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient( 165deg, rgba(255, 255, 255, 1) 0%, rgb(220, 220, 220) 40%, rgb(170, 170, 170) 98%, rgb(10, 10, 10) 100%);
-    border-radius: 50%;
-    position: relative;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(220, 220, 220) 40%,
+    rgb(170, 170, 170) 98%,
+    rgb(10, 10, 10) 100%
+  );
+  border-radius: 50%;
+  position: relative;
 }
 
 .loader:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    border-bottom: 0 solid #ffffff05;
-    box-shadow: 0 -10px 20px 20px #ffffff40 inset, 0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px #ffffff80 inset, 0 -3px 2px #ffffffbb inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff, 0 5px 5px #ffffff90, 0 10px 15px #ffffff60, 0 10px 20px 20px #ffffff40;
-    filter: blur(3px);
-    animation: 2s rotate linear infinite;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border-bottom: 0 solid #ffffff05;
+  box-shadow: 0 -10px 20px 20px #ffffff40 inset,
+    0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px #ffffff80 inset,
+    0 -3px 2px #ffffffbb inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
+    0 5px 5px #ffffff90, 0 10px 15px #ffffff60, 0 10px 20px 20px #ffffff40;
+  filter: blur(3px);
+  animation: 2s rotate linear infinite;
 }
 
 @keyframes rotate {
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loader-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .container {
-    margin: 0 80px;
+  margin: 0 80px;
 }
 
 .header {
-    background-color: #fff;
-    margin-bottom: 48px;
-    padding: 24px 81px;
-    box-shadow: 0px 2px 4px 0px #0000000e;
+  background-color: #fff;
+  margin-bottom: 48px;
+  padding: 24px 81px;
+  box-shadow: 0px 2px 4px 0px #0000000e;
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 32.74px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32.74px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .list {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 75px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 75px;
 }
 
 .list-item {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    box-shadow: 0px 0px 7px 2px #00000008;
-    border-radius: 5px;
-    width: 264px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 7px 2px #00000008;
+  border-radius: 5px;
+  width: 264px;
 }
 
 .list-item img {
-    width: 100%;
-    border-radius: inherit;
-    padding-bottom: 24px;
+  width: 100%;
+  border-radius: inherit;
+  padding-bottom: 24px;
 }
 
 .name {
-    font-weight: 800;
-    padding-left: 24px;
+  font-weight: 800;
+  padding-left: 24px;
 }
 
 form {
-    background-color: #fff;
-    width: 480px;
-    height: 56px;
-    box-shadow: 0px 2px 9px 0px #0000000e;
-    border-radius: 5px;
-    border: none;
-    display: flex;
-    align-items: center;
-    padding-left: 32px;
-    margin-bottom: 48px;
-    gap: 24px;
+  background-color: #fff;
+  width: 480px;
+  height: 56px;
+  box-shadow: 0px 2px 9px 0px #0000000e;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  margin-bottom: 48px;
+  gap: 24px;
 }
 
 input {
-    outline: none;
-    border: none;
-    font-weight: 400;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  width: 100%;
 }
 
 input::placeholder {
-    color: #848484;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
+  color: #848484;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 body.dark-mode {
-    background-color: #202c36;
+  background-color: #202c36;
 }
 
 body.dark-mode h1 {
-    color: #fff;
+  color: #fff;
 }
 
 body.dark-mode header {
-    background-color: #2b3844;
+  background-color: #2b3844;
 }
 
 body.dark-mode .list-item {
-    background-color: #2b3844;
+  background-color: #2b3844;
 }
 
 body.dark-mode .name {
-    color: #fff;
+  color: #fff;
 }
 
 body.dark-mode .value {
-    color: #fff;
+  color: #fff;
 }
 
 body.dark-mode form {
-    background-color: #2b3844;
+  background-color: #2b3844;
 }
 
 body.dark-mode input {
-    background-color: #2b3844;
-    color: #fff;
+  background-color: #2b3844;
+  color: #fff;
 }
 
 body.dark-mode input::placeholder {
-    color: #fff;
+  color: #fff;
 }
